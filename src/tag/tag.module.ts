@@ -6,5 +6,6 @@ import { TagRepository } from './repository/tag.repository';
 @Module({
   controllers: [TagController],
   providers: [TagService, TagRepository],
+  exports: [TagService]
 })
 export class TagModule {}
